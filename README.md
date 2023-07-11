@@ -15,7 +15,7 @@ breeze. Break down language barriers with ease by downloading Kseniia's app toda
 
 ## Preview
 
-![Screencast](screencast.gif)
+<img src="screencast.gif" width=300 alt="Screencast"/>
 
 ## Getting Started
 

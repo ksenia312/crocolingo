@@ -6,7 +6,6 @@ import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:injectable/injectable.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:permission_handler/permission_handler.dart';
 
 import '../domain/language.dart';
 import '../domain/translation/translation_provider.dart';
@@ -78,7 +77,7 @@ class DeeplTranslationProvider extends TranslationProvider {
   }) async {
     final path = await getDownloadPath();
     final now = DateTime.now();
-    if (path != null && await _requestWritePermission()) {
+    if (path != null) {
       await dio.download(
         '/v2/document/$documentId/result',
         '$path/crocolingo-${now.year}${now.month}${now.day}-${now.hour}${now.minute}${now.second}.pdf',
@@ -105,11 +104,5 @@ class DeeplTranslationProvider extends TranslationProvider {
       debugPrint('$e $s');
     }
     return directory?.path;
-  }
-
-  // requests storage permission
-  Future<bool> _requestWritePermission() async {
-    await Permission.storage.request();
-    return Permission.storage.request().isGranted;
   }
 }

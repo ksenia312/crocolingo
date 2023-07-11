@@ -1,9 +1,10 @@
 # CrocoLingo
 
-**Kseniia's pet project app** is available for both Android and iOS platforms.
-It allows you to effortlessly translate text and PDF files with automatic language detection. The
-app conveniently preserves the original formatting of imported PDF documents, making translation a
-breeze. Break down language barriers with ease by downloading Kseniia's app today.
+**My pet project app** is available for both Android and iOS platforms.
+It allows you to effortlessly translate text and PDF files with automatic language detection. 
+
+The app conveniently preserves the original formatting of imported PDF documents, making translation a
+breeze. 
 
 ## Key Features:
 

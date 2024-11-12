@@ -16,7 +16,7 @@ breeze.
 
 ## Preview
 
-<img src="https://github.com/user-attachments/assets/eadc2db5-6637-4695-b6ed-988ce65098f8" width=300 alt="Screencast"/>
+![screencast](https://github.com/user-attachments/assets/58c54197-8f0e-4a58-b223-6143275670d9)
 
 ## Getting Started
 
